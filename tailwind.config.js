@@ -17,6 +17,17 @@ module.exports = {
       },
     },
     extend: {
+      rotate: {
+        3: "3deg",
+        "-3": "-3deg",
+      },
+      boxShadow: {
+        "2xl": "12px 10px 0 black",
+      },
+      backgroundImage: (theme) => ({
+        gradient:
+          "linear-gradient(-45deg, transparent 15px, #111 15px), linear-gradient(45deg, transparent 10px, #111 10px)",
+      }),
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
