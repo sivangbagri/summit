@@ -16,7 +16,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
             className="flex-none text-xl font-semibold dark:text-white"
             href="#"
           >
-            Brand
+            Startup Summit
           </a>
           <div className="sm:hidden">
             <button
@@ -54,32 +54,38 @@ const Navbar: FunctionComponent<Props> = (props) => {
           id="navbar-alignment"
           className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
         >
-          <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:pl-5">
-            <a
-              className="font-medium text-blue-500"
-              href="#"
-              aria-current="page"
-            >
-              Landing
-            </a>
-            <a
-              className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-              href="#"
-            >
-              Account
-            </a>
-            <a
-              className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-              href="#"
-            >
-              Work
-            </a>
-            <a
-              className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-              href="#"
-            >
-              Blog
-            </a>
+          <div className={"flex justify-between"}>
+            <div className="flex flex-col gap-5 mt-5 ml-3 sm:flex-row sm:items-center sm:mt-0 sm:pl-5">
+              <a
+                className="text-xl font-bold transition duration-200 hover:scale-110 ease-in-out"
+                href="#"
+              >
+                Speakers
+              </a>
+              <a
+                className="text-xl font-bold transition duration-200 hover:scale-110 ease-in-out"
+                href="#"
+              >
+                Partners
+              </a>
+              <a
+                className="text-xl font-bold transition duration-200 hover:scale-110 ease-in-out"
+                href="#"
+              >
+                Events
+              </a>
+              <a
+                className="text-xl font-bold transition duration-200 hover:scale-110 ease-in-out"
+                href="#"
+              >
+                Agenda
+              </a>
+            </div>
+            <div>
+              <button className="text-xl font-bold underline border-4 border-black p-1 transition-transform transform hover:-translate-x-1 hover:-translate-y-1">
+                Login
+              </button>
+            </div>
           </div>
         </div>
       </nav>
