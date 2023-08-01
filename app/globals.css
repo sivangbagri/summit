@@ -76,3 +76,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.footer-container {
+  @apply container flex justify-between py-4;
+}
+
+.footer-menu {
+  @apply flex;
+}
+
+.footer-item {
+  @apply mx-4;
+}
+
+.menu-link {
+  @apply text-black hover:opacity-60;
+}
