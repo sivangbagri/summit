@@ -40,7 +40,7 @@ const Card: React.FC<CardProps> = ({
           >
             {/*<Icons.{iconName} />*/}
           </i>
-          <h2 className={`text-2xl ${isDark ? "text-white" : "text-black"}`}>
+          <h2 className={`text-2xl pt-14 ${isDark ? "text-white" : "text-black"}`}>
             {title}
           </h2>
         </div>
