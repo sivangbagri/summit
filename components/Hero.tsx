@@ -6,26 +6,29 @@ const Home: React.FC = () => {
       <div className="w-1/2">
         <div className="space-y-4">
           <div className="underline-dashed text-4xl md:text-6xl font-semibold font-alphasl font-display">
-            IT's always TIME <br /> 4 some BRUTA
-            <span className="leading-tight">L</span> • ISM
+            October 27-29
+            <span className="leading-tight">
+              <br />L
+            </span>{" "}
+            • BLR
           </div>
           <p className="text-lg md:text-xl border-4 border-black p-6 max-w-2xl">
-            Grim-visaged to
+            Beyond the focus themes,
             <span className="relative">
               <span className="absolute w-4 h-2 bg-black top-1/2 transform -translate-y-1/2"></span>
             </span>{" "}
-            merry ##### meetings, our brows bound
+            we’ll deep dive into core themes that are
             <span className="relative">
               <span className="absolute w-4 h-2 bg-black top-1/2 transform -translate-y-1/2"></span>
             </span>{" "}
-            with deep bosom of York.
+            the Indian startup landscape.
           </p>
           <div className="space-x-4">
             <button className="text-xl font-bold underline border-4 border-black p-4 transition-transform transform hover:-translate-x-3 hover:-translate-y-3">
-              Brutto!
+              Login
             </button>
             <button className="text-xl font-bold underline border-4 border-black p-4 transition-transform transform hover:rotate-3">
-              #bruttobrutto ☞
+              Register
             </button>
           </div>
         </div>
