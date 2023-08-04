@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Icons } from "@/components/icons";
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-pink-200 ">
+    <footer className="">
       <div className="footer-container container flex justify-between">
         <Link className="logo-link" href={"/"}>
           <img
