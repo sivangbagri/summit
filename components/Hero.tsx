@@ -1,49 +1,64 @@
 import React from "react";
-
+import meeting from "@/public/assets/meeting.jpg";
+import Image from "next/image";
 const Home: React.FC = () => {
   return (
-    <section className="bg-pink-200 flex items-center justify-between min-h-screen p-6">
-      <div className="w-1/2">
-        <div className="space-y-4">
-          <div className="underline-dashed text-4xl md:text-6xl font-semibold font-alphasl font-display">
-            October 27-29
-            <span className="leading-tight">
-              <br />L
-            </span>{" "}
-            • BLR
-          </div>
-          <p className="text-lg md:text-xl border-4 border-black p-6 max-w-2xl">
-            Beyond the focus themes,
-            <span className="relative">
-              <span className="absolute w-4 h-2 bg-black top-1/2 transform -translate-y-1/2"></span>
-            </span>{" "}
-            we’ll deep dive into core themes that are
-            <span className="relative">
-              <span className="absolute w-4 h-2 bg-black top-1/2 transform -translate-y-1/2"></span>
-            </span>{" "}
-            the Indian startup landscape.
+    <div>
+      {/*<Image*/}
+      {/*  className="absolute inset-0 w-full h-full object-cover object-top"*/}
+      {/*  src={meeting}*/}
+      {/*  width="400"*/}
+      {/*  height="500"*/}
+      {/*  alt="hero background image"*/}
+      {/*/>*/}
+      {/*<Image*/}
+      {/*  className="absolute w-full object-cover blur-3xl object-left-top h-screen inset-0 top-0 hidden dark:block"*/}
+      {/*  src={meeting}*/}
+      {/*  alt="image"*/}
+      {/*  loading="lazy"*/}
+      {/*/>*/}
+      {/*<Image*/}
+      {/*  className="absolute w-full object-cover object-top h-screen inset-0 top-0 dark:hidden"*/}
+      {/*  src={meeting}*/}
+      {/*  alt="image"*/}
+      {/*  loading="lazy"*/}
+      {/*/>*/}
+      <div className="flex justify-center container m-auto px-6 md:px-12 lg:px-7">
+        <div className="py-40 px-20 flex-col justify-center items-center lg:py-56  dark:lg:w-6/12 ml-auto">
+          <h1 className="text-gray-900 dark:text-white font-bold text-4xl md:text-6xl lg:text-4xl xl:text-6xl">
+            Startup Summit{" "}
+            <span className="text-teal-600 dark:text-teal-500">Banglore.</span>
+          </h1>
+          <p className="mt-8 text-gray-700 dark:text-gray-300 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            incidunt nam itaque sed eius modi error totam sit illum. Voluptas
+            doloribus asperiores quaerat aperiam. Quidem harum omnis beatae
+            ipsum soluta!
           </p>
-          <div className="space-x-4">
-            <button className="text-xl font-bold underline border-4 border-black p-4 transition-transform transform hover:-translate-x-3 hover:-translate-y-3">
-              Login
+          <div className="mt-16 space-y-2 lg:space-y-0 md:w-max sm:space-x-6">
+            <button
+              type="button"
+              title="Start buying"
+              className="w-full py-3 px-6 text-center rounded-full transition bg-teal-300 hover:bg-teal-100 active:bg-teal-400 focus:bg-teal-300 sm:w-max"
+            >
+              <span className="block text-teal-900 font-semibold text-sm">
+                Register
+              </span>
             </button>
-            <button className="text-xl font-bold underline border-4 border-black p-4 transition-transform transform hover:rotate-3">
-              Register
+            <button
+              type="button"
+              title="Start buying"
+              className="w-full py-3 px-6 text-center rounded-full transition border border-gray-200 dark:active:bg-teal-900 dark:focus:bg-gray-800 active:bg-teal-200 focus:bg-teal-100 sm:w-max"
+            >
+              <span className="block text-teal-800 dark:text-teal-100 font-semibold text-sm">
+                About us
+              </span>
             </button>
           </div>
         </div>
+        <hr />
       </div>
-      <div className="w-1/2 relative">
-        <img
-          className="w-4/5 h-full object-cover border-6 border-black shadow-2xl transition-transform transform hover:rotate-3 hover:filter"
-          src="https://cdn.openart.ai/stable_diffusion/50694a4111aeb8cc7286d52b7306942a140343b8_2000x2000.webp"
-          alt="Artwork"
-        />
-        <div className="absolute bottom-[-40px] right-[55px] w-75 h-90 bg-gradient-to-br from-transparent to-black">
-          <div className="w-10 h-10 bg-gradient-to-br from-transparent to-black transform rotate-[-45deg]"></div>
-        </div>
-      </div>
-    </section>
+    </div>
   );
 };
 
