@@ -25,9 +25,11 @@ type Props = OwnProps;
 
 const Navbar: FunctionComponent<Props> = (props) => {
   return (
-    <header>
-      <nav className="fixed z-10 w-full dark:bg-gray-900 bg-white md:absolute md:bg-transparent">
-        <div className="container m-auto px-2 md:px-12 lg:px-7">
+    <header
+      className={"w-[100%] sticky top-8 max-w-[67.5rem] m-auto lg:p-0 px-4"}
+    >
+      <nav className="w-full rounded-full z-10 bg-gray-900  md:absolute fixed">
+        <div className="m-auto px-2 md:px-12 lg:px-7">
           <div className="flex flex-wrap items-center justify-between py-4 gap-6 md:py-4 md:gap-0 relative">
             <input
               type="checkbox"
@@ -45,8 +47,8 @@ const Navbar: FunctionComponent<Props> = (props) => {
                   <div className="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>
                   <div className="h-6 w-2 bg-teal-500"></div>
                 </div>
-                <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                  Arceelus
+                <span className="text-2xl font-bold text-green-900 dark:text-white">
+                  E-Cell
                 </span>
               </a>
 
@@ -75,14 +77,14 @@ const Navbar: FunctionComponent<Props> = (props) => {
             <div
               className="hidden absolute top-full transition translate-y-1 lg:peer-checked:translate-y-0 lg:translate-y-0 left-0 
                     lg:top-0 lg:relative peer-checked:flex w-full 
-                    lg:flex lg:flex-row flex-col 
+                    lg:flex lg:flex-row flex-col
                     flex-wrap justify-end items-center 
                     gap-6 p-6 rounded-xl 
                     bg-white dark:bg-gray-900 lg:gap-0 
                     lg:p-0  
-                    lg:bg-transparent lg:w-7/12"
+                    lg:bg-transparent lg:w-auto"
             >
-              <div className="text-gray-600 dark:text-gray-300 lg:pr-4 lg:w-auto w-full lg:pt-0">
+              <div className="text-gray-400 dark:text-gray-300 lg:pr-4 lg:w-auto w-full lg:pt-0">
                 <ul
                   className=" 
                             tracking-wide 
@@ -96,7 +98,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                       <li key={index}>
                         <a
                           href={navigator.link}
-                          className="block md:px-4 transition hover:text-teal-700"
+                          className="block md:px-4 hover:text-white transition ease-in-out"
                         >
                           <span>{navigator.name}</span>
                         </a>
@@ -112,17 +114,17 @@ const Navbar: FunctionComponent<Props> = (props) => {
                   title="Start buying"
                   className="w-full py-3 px-6 text-center rounded-full transition dark:active:bg-teal-900 dark:focus:bg-gray-800 active:bg-teal-200 focus:bg-teal-100 sm:w-max"
                 >
-                  <span className="block text-teal-800 dark:text-teal-300 font-semibold text-sm">
+                  <span className="block text-white hover:border-1 hover:rounded-full dark:text-teal-300 font-semibold text-sm">
                     Sign up
                   </span>
                 </button>
                 <button
                   type="button"
                   title="Start buying"
-                  className="w-full py-3 px-6 text-center rounded-full transition bg-teal-300 hover:bg-teal-100 active:bg-teal-400 focus:bg-teal-300 sm:w-max"
+                  className="w-full py-3 hover:curs px-6 text-center rounded-full transition bg-primary-foreground hover:bg-teal-100 active:bg-teal-400 focus:bg-teal-300 sm:w-max"
                 >
                   <span className="block text-teal-900 font-semibold text-sm">
-                    Contact Us
+                    Register
                   </span>
                 </button>
               </div>
