@@ -6,7 +6,7 @@ import Topics from "@/components/Topics";
 
 export default function Home() {
   return (
-    <main>
+    <main className={""}>
       {/*<Navbar />*/}
       <Hero />
       <Topics />
