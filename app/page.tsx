@@ -1,16 +1,23 @@
 // import HeroSection from "@/components/normal/hero";
-import Navbar from "@/components/main-nav";
+
 import Hero from "@/components/Hero";
+import Content from "@/components/Content"
+import About from "@/components/About"
+import Highlight from "@/components/Hightlight"
+import Carousel from "@/components/Carousel"
 import Footer from "@/components/Footer";
-import Topics from "@/components/Topics";
+import Hightlight from "@/components/Hightlight";
+// import Topics from "@/components/Topics";
 
 export default function Home() {
   return (
-    <main className={""}>
-      {/*<Navbar />*/}
+    <>
       <Hero />
-      <Topics />
-      <Footer />
-    </main>
+        <About/>
+        <Content/>
+        <Carousel/>
+      <Hightlight/>
+      {/*<Topics />*/}
+    </>
   );
 }

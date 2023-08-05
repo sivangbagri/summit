@@ -26,6 +26,8 @@
     "clsx": "^2.0.0",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
+    "flowbite": "^1.8.1",
+    "flowbite-react": "^0.5.0",
     "framer-motion": "^10.13.1",
     "lucide-react": "^0.263.1",
     "next": "13.4.12",
