@@ -8,7 +8,7 @@ import Carousel from "@/components/Carousel"
 import Footer from "@/components/Footer";
 import Hightlight from "@/components/Hightlight";
 // import Topics from "@/components/Topics";
-
+import { Trailblazzers } from "@/components/normal/Trailblazzers";
 export default function Home() {
   return (
     <>
@@ -18,6 +18,7 @@ export default function Home() {
         <Carousel/>
       <Hightlight/>
       {/*<Topics />*/}
+      <Trailblazzers/>
     </>
   );
 }
