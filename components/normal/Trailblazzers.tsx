@@ -8,10 +8,6 @@ export const Trailblazzers = () => {
         <h2 className='mb-4 text-2xl font-bold text-gray-800 dark:text-white md:text-4xl text-center'>
           Some of our guests
         </h2>
-        <p className="text-gray-600 dark:text-gray-300">
-          Tailus prides itself not only on award-winning technology, but also on the talent of its
-          people of some of the brightest minds and most experienced executives in business.
-        </p>
       </div>
       <div className='grid gap-6 px-4 sm:py-4 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
 
