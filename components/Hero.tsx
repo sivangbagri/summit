@@ -25,7 +25,7 @@ const Home: React.FC = () => {
       {/*  loading="lazy"*/}
       {/*/>*/}
       <div className="flex justify-center container m-auto px-6 md:px-12 lg:px-7">
-        <div className="py-40 px-20 flex-col justify-center items-center lg:py-56  dark:lg:w-6/12 ml-auto">
+        <div className="py-40 pb-0 lg:pb-0 px-20 flex-col justify-center items-center lg:py-56  dark:lg:w-6/12 ml-auto">
           <h1 className="text-gray-900 dark:text-white text-center font-bold text-4xl md:text-6xl lg:text-4xl xl:text-6xl">
             Digital Startup Summit {" "}
             <span className="text-primary">Bangalore.</span>

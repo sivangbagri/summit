@@ -20,7 +20,7 @@ const nav = [
   },
   {
     name: "Agenda",
-    link: "",
+    link: "/agenda",
   },
 ];
 
