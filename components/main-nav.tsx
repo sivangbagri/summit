@@ -1,11 +1,14 @@
 import React, { FunctionComponent } from "react";
-
+import Image from "next/image";
+import logo from "@/public/logo/logo.png";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 interface OwnProps {}
 
 const nav = [
   {
     name: "Speakers",
-    link: "",
+    link: "/#Speakers",
   },
   {
     name: "Partners",
@@ -26,9 +29,11 @@ type Props = OwnProps;
 const Navbar: FunctionComponent<Props> = (props) => {
   return (
     <header
-      className={"w-[100%] sticky z-10 top-8 max-w-[67.5rem] m-auto lg:p-0 px-4"}
+      className={
+        "w-[100%] sticky z-10 top-8 max-w-[67.5rem] m-auto lg:p-0 px-4"
+      }
     >
-      <nav className="w-full rounded-full z-10 bg-gray-900  md:absolute fixed">
+      <nav className="w-full rounded-full z-10 bg-gray-100 bg-transparent opacity-95  md:absolute fixed">
         <div className="m-auto px-2 md:px-12 lg:px-7">
           <div className="flex flex-wrap items-center justify-between py-4 gap-6 md:py-4 md:gap-0 relative">
             <input
@@ -43,13 +48,20 @@ const Navbar: FunctionComponent<Props> = (props) => {
                 aria-label="logo"
                 className="flex space-x-2 items-center"
               >
-                <div aria-hidden="true" className="flex space-x-1">
-                  <div className="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>
-                  <div className="h-6 w-2 bg-teal-500"></div>
-                </div>
-                <span className="text-2xl font-bold text-green-900 dark:text-white">
-                  E-Cell
-                </span>
+                {/*<div aria-hidden="true" className="flex space-x-1">*/}
+                {/*  <div className="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>*/}
+                {/*  <div className="h-6 w-2 bg-teal-500"></div>*/}
+                {/*</div>*/}
+                {/*<span className="text-2xl font-bold text-green-900 dark:text-white">*/}
+                {/*  E-Cell*/}
+                {/*</span>*/}
+                <Image
+                  src={logo}
+                  width={80}
+                  height={80}
+                  // className={'mix-blend-multiply'}
+                  alt="startup summit logo"
+                />
               </a>
 
               <div className="flex items-center lg:hidden max-h-10">
@@ -96,37 +108,35 @@ const Navbar: FunctionComponent<Props> = (props) => {
                   {nav.map((navigator, index) => {
                     return (
                       <li key={index}>
-                        <a
-                          href={navigator.link}
-                          className="block md:px-4 hover:text-white transition ease-in-out"
-                        >
-                          <span>{navigator.name}</span>
-                        </a>
+                        <Link href={navigator.link}>
+                          <Button
+                            variant={"link"}
+                          >
+                            <span>{navigator.name}</span>
+                          </Button>
+                        </Link>
                       </li>
                     );
                   })}
                 </ul>
               </div>
 
-              <div className="w-full lg:pl-2 space-y-2 border-teal-200 lg:w-auto lg:space-y-0 sm:w-max lg:border-l">
-                <button
+              <div className="w-full lg:pl-2 space-y-2 border-primary lg:w-auto lg:space-y-0 sm:w-max lg:border-l">
+                <Button
                   type="button"
                   title="Start buying"
-                  className="w-full py-3 px-6 text-center rounded-full transition dark:active:bg-teal-900 dark:focus:bg-gray-800 active:bg-teal-200 focus:bg-teal-100 sm:w-max"
+                  variant={"outline"}
+                  className={"rounded-full mr-3"}
                 >
-                  <span className="block text-white hover:border-1 hover:rounded-full dark:text-teal-300 font-semibold text-sm">
-                    Sign up
-                  </span>
-                </button>
-                <button
+                  Sign up
+                </Button>
+                <Button
                   type="button"
                   title="Start buying"
-                  className="w-full py-3 hover:curs px-6 text-center rounded-full transition bg-primary-foreground hover:bg-teal-100 active:bg-teal-400 focus:bg-teal-300 sm:w-max"
+                  className={"rounded-full"}
                 >
-                  <span className="block text-teal-900 font-semibold text-sm">
-                    Register
-                  </span>
-                </button>
+                  Register
+                </Button>
               </div>
             </div>
           </div>
