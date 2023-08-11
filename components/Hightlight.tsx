@@ -31,7 +31,7 @@ const Hightlight: React.FC = () => {
     <div className="py-16">
       <div className="xl:container px-6 text-gray-500 md:px-12 m-auto mb-6">
         <div className={"flex justify-center"}>
-          <h2 className="mt-4 text-2xl font-bold md:text-4xl">
+          <h2 className="mt-4 text-2xl text-black font-bold md:text-4xl">
             Summit Highlights
           </h2>
         </div>
