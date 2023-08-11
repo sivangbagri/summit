@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import Hightlight from "@/components/Hightlight";
 // import Topics from "@/components/Topics";
 import { Trailblazzers } from "@/components/normal/Trailblazzers";
+import Stats from "@/components/Stats";
 export default function Home() {
   return (
     <>

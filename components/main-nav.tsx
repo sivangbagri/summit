@@ -33,7 +33,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
         "w-[100%] sticky z-10 top-8 max-w-[67.5rem] m-auto lg:p-0 px-4"
       }
     >
-      <nav className="w-full rounded-full z-10 bg-gray-100 bg-transparent opacity-95  md:absolute fixed">
+      <nav className="w-full rounded-full z-10 bg-gray-300 opacity-95  md:absolute fixed">
         <div className="m-auto px-2 md:px-12 lg:px-7">
           <div className="flex flex-wrap items-center justify-between py-4 gap-6 md:py-4 md:gap-0 relative">
             <input
