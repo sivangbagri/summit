@@ -3,10 +3,10 @@ import { images } from '../ui/Photos'
 import Person from '../ui/Person'
 export const Trailblazzers = () => {
   return(
-    <div className='container  mx-auto px-6 md:px-12'>
+    <div id={"Speakers"} className='container  mx-auto px-6 md:px-12'>
       <div className='mb-16 md:w-2/3 lg:w-1/2 mx-auto'>
         <h2 className='mb-4 text-2xl font-bold text-gray-800 dark:text-white md:text-4xl text-center'>
-          Some of our guests
+        IIT BHU Trailblazers
         </h2>
       </div>
       <div className='grid gap-6 px-4 sm:py-4 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
