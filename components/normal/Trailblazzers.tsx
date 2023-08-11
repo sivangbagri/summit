@@ -5,7 +5,7 @@ export const Trailblazzers = () => {
   return (
     <div id={"Speakers"} className="container  mx-auto px-6 md:px-48">
       <div className="mb-16 md:w-2/3 lg:w-1/2 mx-auto">
-        <h2 className="mb-4 text-2xl font-bold text-gray-800 dark:text-white md:text-4xl text-center">
+        <h2 className="mb-4 text-2xl font-bold md:text-4xl text-center">
           IIT BHU Trailblazers
         </h2>
       </div>

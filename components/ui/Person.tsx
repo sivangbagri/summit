@@ -20,7 +20,7 @@ const Person: React.FC<PersonProps> = ({ name, company, imageUrl, quote,position
         width="600"
         height="800"
       />
-      <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-primary dark:bg-white translate-y-[100px] transition duration-300 ease-in-out group-hover:translate-y-0">
+      <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-primary translate-y-[100px] transition duration-300 ease-in-out group-hover:translate-y-0">
         <div>
           <h4 className="text-xl font-semibold dark:text-gray-700 text-white">
             {name}
