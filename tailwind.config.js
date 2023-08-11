@@ -3,19 +3,22 @@ module.exports = {
   darkMode: ["class"],
   content: [
     "node_modules/preline/dist/*.js",
-    "./node_modules/flowbite-react/**/*.js",
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    "./pages/**/*.{ts,tsx}",
-    "./public/**/*.html",
   ],
   theme: {
     container: {
       center: true,
       padding: "2rem",
       screens: {
+         
+         //...defaultTheme.screens,
+        "sm":"640px",
+        "md":"768px",
+        "lg":"1024px",
+        "xl":"1280px",
         "2xl": "1400px",
       },
     },
@@ -87,5 +90,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("preline/plugin"),require("flowbite/plugin")],
+  plugins: [require("tailwindcss-animate"), require("preline/plugin")],
 };
