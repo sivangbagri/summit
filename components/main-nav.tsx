@@ -54,7 +54,7 @@ const nav = [
     link: "/agenda",
   },
   {
-    name:"Startup/Participant",
+    name:"Startup/Participants",
     link:""
   },
   {
