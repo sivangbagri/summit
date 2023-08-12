@@ -12,7 +12,7 @@ const nav = [
   },
   {
     name: "Partners",
-    link: "",
+    link: "/partners",
   },
   {
     name: "Events",
