@@ -1,21 +1,73 @@
 // components/Footer.tsx
+import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { Icons } from "@/components/icons";
+import cell from "@/public/logo/E-Cell.png";
+import styles from './styles.module.css';
 const Footer: React.FC = () => {
+  /* useEffect(() => {
+    // After the component mounts, add a class to trigger the animation
+    const animatedDiv = document.getElementById('animatedDiv');
+    if (animatedDiv) {
+      animatedDiv.classList.add('animate'); // Assuming you have a class named 'slide-in' for animation
+    }
+  }, []); */
   return (
-    <footer className="">
-      <div className="footer-container container flex justify-between">
-        <Link className="logo-link" href={"/"}>
-          <img
-            className="footer-logo"
-            width="46"
-            height="46"
-            alt="Logo"
-            src="https://cdn.openart.ai/stable_diffusion/50694a4111aeb8cc7286d52b7306942a140343b8_2000x2000.webp"
-          />
-        </Link>
-        <ul className="footer-menu">
+    <section className="mt-10">
+
+        <div className="justify-content mx-auto h-auto w-11/12 gap-14 md:flex">
+        <div className="mt-16 basis-1/4 md:mt-0">
+            <h4 className="font-bold text-center text-primary">E-Cell IIT BHU</h4>
+            <div id="borders" className={`${styles.borders} ${styles.animate}`}>
+              <span></span>
+            </div>
+            <div>
+                            <Image
+                                className={styles.imageContainer}
+                                src={cell}
+                                alt="ecell"
+                                loading="lazy"
+                                width="200"
+                                height="200"
+                            />            </div>
+        </div>
+        <div className="mt-16 basis-1/4 md:mt-0">
+            <h4 className="font-bold text-center text-primary">Contact Us</h4>
+            <div id="borders" className={`${styles.borders} ${styles.animate}`}>
+              <span></span>
+            </div>
+            <p className=" mt-5 text-center">
+            Indian Institute of Technology<br/>
+            (Banaras Hindu University)<br/>
+            Varanasi, India<br/>
+            PIN: 221005<br/>
+
+            ✉️ecell@iitbhu.ac.in<br/>
+            📞+91 9120787959</p>
+         </div>
+         <div className="mt-16 basis-1/4 md:mt-0">
+            <h4 className="font-bold text-center text-primary">Quick Links</h4>
+            <div id="borders" className={`${styles.borders} ${styles.animate}`}>
+              <span></span>
+            </div>
+            <div className="text-center pt-5">
+            <div><a href="/home">Home</a></div> 
+        <div className="py-2"><a href="/about">About </a></div>
+        <div className="pb-2"><a href="/guide">Guide</a></div>
+        <div className="pb-2"><a href="/blog">Blogs</a></div>
+        <div className="pb-2"><a href="/contact">Contact</a></div>
+         </div>
+         </div>
+        <div className="mt-16 basis-1/4 md:mt-0">
+        <div className="font-bold text-center text-primary">Connect with Us
+        <div id="borders" className={`${styles.borders} ${styles.animate}`}>
+              <span></span>
+            </div>
+      </div>
+      <div className="flex justify-center items-center m-5 p-0">
+      <div className="text-base h-12 w-120 inline-block text-center rounded ">
+      <ul className="footer-menu">
           <li className="footer-item">
             <Link
               className="menu-link"
@@ -54,7 +106,10 @@ const Footer: React.FC = () => {
           </li>
         </ul>
       </div>
-    </footer>
+      </div>
+      </div>
+      </div>
+    </section>
   );
 };
 
