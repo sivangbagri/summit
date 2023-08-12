@@ -8,7 +8,7 @@ interface OwnProps {}
 const nav = [
   {
     name: "Speakers",
-    link: "/#Speakers",
+    link: "/speakers",
   },
   {
     name: "Partners",
