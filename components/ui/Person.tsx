@@ -12,7 +12,7 @@ interface PersonProps {
 }
 const Person: React.FC<PersonProps> = ({ name, company, imageUrl, quote, position }) => {
   return (
-    <div className="group relative rounded-3xl space-y-6 overflow-hidden">
+    <div className="group relative rounded-3xl space-y-6 overflow-hidden flex-wrap">
       <Image
         className="mx-auto h-[26rem] w-full grayscale object-cover object-top transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
         src={imageUrl}
