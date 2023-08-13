@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { FunctionComponent } from "react";
 import Image from "next/image";
 import logo from "@/public/logo/logo.png";
@@ -19,7 +19,7 @@ import {
   User,
   UserPlus,
   Users,
-} from "lucide-react"
+} from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -33,7 +33,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 interface OwnProps {}
 
 const nav = [
@@ -54,14 +54,13 @@ const nav = [
     link: "/agenda",
   },
   {
-    name:"Startup/Participants",
-    link:""
+    name: "Startup/Participants",
+    link: "",
   },
   {
-    name:"Investors",
-    link:""
-  }
-
+    name: "Investors",
+    link: "",
+  },
 ];
 
 type Props = OwnProps;
@@ -149,9 +148,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                     return (
                       <li key={index}>
                         <Link href={navigator.link}>
-                          <Button
-                            variant={"link"}
-                          >
+                          <Button variant={"link"}>
                             <span>{navigator.name}</span>
                           </Button>
                         </Link>
@@ -162,25 +159,23 @@ const Navbar: FunctionComponent<Props> = (props) => {
               </div>
 
               <div className="w-full lg:pl-2 space-y-2 border-primary lg:w-auto lg:space-y-0 sm:w-max lg:border-l">
-               
-              <DropdownMenu>
-                    <DropdownMenuTrigger   > 
-                
-                  <Button
-                   type="button"
-                   title="Start buying"
-                   className={"rounded-full"}>
-                Register</Button> </DropdownMenuTrigger>
-                    <DropdownMenuContent>
-
-                      <DropdownMenuSeparator />
-                      <DropdownMenuItem>Investor</DropdownMenuItem>
-                      <DropdownMenuItem>Startup</DropdownMenuItem>
-                      <DropdownMenuItem>Attendee</DropdownMenuItem>
-
-                    </DropdownMenuContent>
-                  </DropdownMenu>
-              
+                <DropdownMenu>
+                  <DropdownMenuTrigger>
+                    <Button
+                      type="button"
+                      title="Start buying"
+                      className={"rounded-full"}
+                    >
+                      Register
+                    </Button>{" "}
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>Investor</DropdownMenuItem>
+                    <DropdownMenuItem>Startup</DropdownMenuItem>
+                    <DropdownMenuItem>Attendee</DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </div>
             </div>
           </div>

@@ -3,14 +3,13 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { Icons } from "@/components/icons";
-import aassi_img from "@/public/logo/aassi_img.png"
-import ecell_img from "@/public/logo/ecell_icon.png"
-import aiba_img from "@/public/logo/aiba_img.png"
-import pro_img from "@/public/logo/pro_img.png"
-import saic_img from "@/public/logo/saic_img.png"
-import kdem_img from "@/public/logo/kdem_img.png"
-import styles from './styles.module.css';
-
+import aassi_img from "@/public/logo/aassi_img.png";
+import ecell_img from "@/public/logo/ecell_icon.png";
+import aiba_img from "@/public/logo/aiba_img.png";
+import pro_img from "@/public/logo/pro_img.png";
+import saic_img from "@/public/logo/saic_img.png";
+import kdem_img from "@/public/logo/kdem_img.png";
+import styles from "./styles.module.css";
 
 // --------------------------------------------------------Designed by Sumit--------------------------------------------------------
 // New Footer
@@ -89,18 +88,20 @@ const Footer = () => {
               <Icons.instagram />
             </Link>
           </div>
-
-
         </div>
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
           {/* Company links */}
 
           <div>
-            <h6 className="text-lg font-medium text-cyan-900">E-Cell IIT BHU</h6>
+            <h6 className="text-lg font-medium text-cyan-900">
+              E-Cell IIT BHU
+            </h6>
             <ul className="mt-4 list-inside space-y-4">
               <li className="pr-12">
                 <span className="">
-                  E-Cell IIT BHU fosters innovation at IIT BHU Varanasi, nurturing startups and providing networking opportunities for aspiring entrepreneurs.
+                  E-Cell IIT BHU fosters innovation at IIT BHU Varanasi,
+                  nurturing startups and providing networking opportunities for
+                  aspiring entrepreneurs.
                 </span>
               </li>
             </ul>
@@ -119,10 +120,14 @@ const Footer = () => {
                 <span className="">Varanasi-221005, India</span>
               </li>
               <li>
-                <a href="#" className="transition hover:text-cyan-600">✉️  ecell@iitbhu.ac.in</a>
+                <a href="#" className="transition hover:text-cyan-600">
+                  ✉️ ecell@iitbhu.ac.in
+                </a>
               </li>
               <li>
-                <a href="#" className="transition hover:text-cyan-600">📞  +91 9120787959</a>
+                <a href="#" className="transition hover:text-cyan-600">
+                  📞 +91 9120787959
+                </a>
               </li>
             </ul>
           </div>
@@ -130,36 +135,39 @@ const Footer = () => {
             <h6 className="text-lg font-medium text-cyan-900">Quick Links</h6>
             <ul className="mt-4 list-inside space-y-4">
               <li>
-                <a href="#" className="transition hover:text-cyan-600">Home</a>
+                <a href="#" className="transition hover:text-cyan-600">
+                  Home
+                </a>
               </li>
               <li>
-                <a href="#" className="transition hover:text-cyan-600">About</a>
+                <a href="#" className="transition hover:text-cyan-600">
+                  About
+                </a>
               </li>
               <li>
-                <a href="#" className="transition hover:text-cyan-600">Guide</a>
+                <a href="#" className="transition hover:text-cyan-600">
+                  Guide
+                </a>
               </li>
               <li>
-                <a href="#" className="transition hover:text-cyan-600">Blogs</a>
+                <a href="#" className="transition hover:text-cyan-600">
+                  Blogs
+                </a>
               </li>
               <li>
-                <a href="#" className="transition hover:text-cyan-600">Contact</a>
+                <a href="#" className="transition hover:text-cyan-600">
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
-
         </div>
-
       </div>
     </footer>
   );
 };
 
 export default Footer;
-
-
-
-
-
 
 // const Footer: React.FC = () => {
 //   /* useEffect(() => {
@@ -208,7 +216,7 @@ export default Footer;
 //               <span></span>
 //             </div>
 //             <div className="text-center pt-5">
-//             <div><a href="/home">Home</a></div> 
+//             <div><a href="/home">Home</a></div>
 //         <div className="py-2"><a href="/about">About </a></div>
 //         <div className="pb-2"><a href="/guide">Guide</a></div>
 //         <div className="pb-2"><a href="/blog">Blogs</a></div>
