@@ -82,8 +82,8 @@ const Navbar: FunctionComponent<Props> = (props) => {
               className="hidden peer"
             />
             <div className="w-full px-6 flex justify-between lg:w-max md:px-0">
-              <a
-                href="#"
+              <Link
+                href="/"
                 aria-label="logo"
                 className="flex space-x-2 items-center"
               >
@@ -101,7 +101,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                   // className={'mix-blend-multiply'}
                   alt="startup summit logo"
                 />
-              </a>
+              </Link>
 
               <div className="flex items-center lg:hidden max-h-10">
                 <label
@@ -171,9 +171,16 @@ const Navbar: FunctionComponent<Props> = (props) => {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem>Investor</DropdownMenuItem>
-                    <DropdownMenuItem>Startup</DropdownMenuItem>
-                    <Link href={"/attendee"} >
+                    <Link href={"https://forms.gle/UNSupDxDiVUvX7Rz9"} target={"_blank"}>
+                      <DropdownMenuItem>Investor</DropdownMenuItem>
+                    </Link>
+                    <Link
+                      href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}
+                      target={"_blank"}
+                    >
+                      <DropdownMenuItem>Startup</DropdownMenuItem>
+                    </Link>
+                    <Link href={"/attendee"}>
                       <DropdownMenuItem>Attendee</DropdownMenuItem>
                     </Link>
                   </DropdownMenuContent>
