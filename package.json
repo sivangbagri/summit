@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "exec prettier . --write"
   },
   "dependencies": {
     "@nextui-org/button": "0.0.0-dev-v2-20230326012034",
@@ -44,6 +45,7 @@
   "devDependencies": {
     "@types/node": "20.4.5",
     "@types/react": "18.2.16",
+    "prettier": "3.0.1",
     "typescript": "5.1.6"
   }
 }
