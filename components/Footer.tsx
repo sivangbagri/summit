@@ -16,7 +16,7 @@ import styles from "./styles.module.css";
 
 const Footer = () => {
   return (
-    <footer className="rounded-xl bg-gray-2.00 pt-1 mt-4">
+    <footer className="rounded-xl bg-gray-200 pt-1 mt-4">
       <div className="container m-auto space-y-8 px-6 py-5 text-gray-600 md:px-12 lg:px-20">
         <div className="flex flex-wrap justify-between items-center gap-4 border-b pb-2">
           <div className="flex items-center gap-6">
@@ -146,7 +146,10 @@ const Footer = () => {
           </div>
           <div>
             <h6 className="text-lg font-medium text-cyan-900">Quick Links</h6>
-            <ul className="mt-4 list-inside space-y-4 flex gap-2 justify-center space-between items-center sm:block">
+            <ul className="mt-4 list-inside sm:space-y-4 flex gap-2 justify-center space-between items-center sm:block">
+
+              <li>
+              </li>
               <li>
                 <a href="#" className="transition hover:text-cyan-600">
                   Home
