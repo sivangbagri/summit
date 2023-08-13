@@ -173,7 +173,9 @@ const Navbar: FunctionComponent<Props> = (props) => {
                     <DropdownMenuSeparator />
                     <DropdownMenuItem>Investor</DropdownMenuItem>
                     <DropdownMenuItem>Startup</DropdownMenuItem>
-                    <DropdownMenuItem>Attendee</DropdownMenuItem>
+                    <Link href={"/attendee"} >
+                      <DropdownMenuItem>Attendee</DropdownMenuItem>
+                    </Link>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>
