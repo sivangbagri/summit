@@ -83,7 +83,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
             />
             <div className="w-full px-6 flex justify-between lg:w-max md:px-0">
               <a
-                href="#"
+                href="/"
                 aria-label="logo"
                 className="flex space-x-2 items-center"
               >
