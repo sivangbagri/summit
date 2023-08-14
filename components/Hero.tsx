@@ -33,7 +33,7 @@ const Home: React.FC = () => {
                 top: 0,
               }}
             />
-             <Image src={Frame} className="w-96 h-72 relative    mt-0 ml-20 inline-block mx-auto" />
+             <Image src={Frame} className="w-96 h-72 relative    mt-0 ml-20 inline-block mx-auto" alt="overlay"/>
             <div>
 
            
