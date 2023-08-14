@@ -46,7 +46,7 @@ const Home: React.FC = () => {
             Digital Startup Summit{" "}
             <span className="text-primary">Bangalore.</span>
           </h1>
-          <p className="mt-8 px-36 text-gray-700 dark:text-gray-300 text-center">
+          <p className="mt-8 md:px-36 text-gray-700 dark:text-gray-300 text-center">
             The Digital Startup Summit 2023 is a groundbreaking two-day event
             that brings together aspiring entrepreneurs, seasoned professionals,
             industry experts, and investors from across the globe to the vibrant
