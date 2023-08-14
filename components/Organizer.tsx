@@ -14,10 +14,10 @@ type Props = OwnProps;
 
 const Organizer: FunctionComponent<Props> = (props) => {
   return (
-    <div
-      className={`relative mt-4 mb-4 flex min-w-min  flex-col items-center overflow-hidden py-20 md:py-40 `}
-      style={{ backgroundImage: `url(${bg.src})` }}
-    >
+      <div
+          className={`relative mt-4 mb-4 flex min-w-min  flex-col items-center overflow-hidden py-20 md:py-40 `}
+          style={{ backgroundImage: `url(${bg.src})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover"}}
+      >
       {/*<Image*/}
       {/*  className="absolute inset-0 min-w-max h-full items-center  object-cover object-top mb-10"*/}
       {/*  src={bg}*/}
