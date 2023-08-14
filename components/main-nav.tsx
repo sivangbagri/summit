@@ -160,14 +160,13 @@ const Navbar: FunctionComponent<Props> = (props) => {
 
               <div className="w-full lg:pl-2 space-y-2 border-primary lg:w-auto lg:space-y-0 sm:w-max lg:border-l">
                 <DropdownMenu>
-                  <DropdownMenuTrigger>
+                  <DropdownMenuTrigger className={"outline-none"}>
                     <Button
                       type="button"
-                      title="Start buying"
-                      className={"rounded-full"}
+                      className={"rounded-full focus-visible:outline-none"}
                     >
                       Register
-                    </Button>{" "}
+                    </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuSeparator />
