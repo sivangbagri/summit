@@ -170,7 +170,10 @@ const Navbar: FunctionComponent<Props> = (props) => {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuSeparator />
-                    <Link href={"https://forms.gle/UNSupDxDiVUvX7Rz9"} target={"_blank"}>
+                    <Link
+                      href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}
+                      target={"_blank"}
+                    >
                       <DropdownMenuItem>Investor</DropdownMenuItem>
                     </Link>
                     <Link
