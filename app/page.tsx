@@ -11,12 +11,13 @@ export default function Home() {
     <>
       <Hero />
       <Organizer />
+        <Hightlight />
+        {/*<Topics />*/}
+        <Trailblazzers />
       <About />
       <Content />
       {/*<Carousel/>*/}
-      <Hightlight />
-      {/*<Topics />*/}
-      <Trailblazzers />
+
     </>
   );
 }

@@ -21,6 +21,7 @@ const Organizer: FunctionComponent<Props> = (props) => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
+        backgroundAttachment:"fixed",
       }}
     >
       {/*<Image*/}
