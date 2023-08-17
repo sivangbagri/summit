@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import meeting from "@/public/assets/meeting.jpg";
 import Image from "next/image";
@@ -63,21 +63,24 @@ const Home: React.FC = () => {
               <DropdownMenu>
                 <DropdownMenuTrigger className={"outline-none"}>
                   <Button
-                      type="button"
-                      size={"lg"}
-                      className={"rounded-full focus-visible:outline-none"}
+                    type="button"
+                    size={"lg"}
+                    className={"rounded-full focus-visible:outline-none"}
                   >
                     Register
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                   <DropdownMenuSeparator />
-                  <Link href={"https://forms.gle/UNSupDxDiVUvX7Rz9"} target={"_blank"}>
+                  <Link
+                    href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}
+                    target={"_blank"}
+                  >
                     <DropdownMenuItem>Investor</DropdownMenuItem>
                   </Link>
                   <Link
-                      href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}
-                      target={"_blank"}
+                    href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}
+                    target={"_blank"}
                   >
                     <DropdownMenuItem>Startup</DropdownMenuItem>
                   </Link>
