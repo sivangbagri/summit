@@ -6,7 +6,7 @@ import aiba from "@/public/logo/AIBA.png";
 import saic from "@/public/logo/SAIC.png";
 import promgf from "@/public/logo/proMFG.png";
 import kdem from "@/public/logo/KDEM.png";
-import bg from "@/public/radiant-gradient.svg";
+import bg from "@/public/bbblurry.svg";
 
 interface OwnProps {}
 
@@ -24,13 +24,6 @@ const Organizer: FunctionComponent<Props> = (props) => {
         backgroundAttachment:"fixed",
       }}
     >
-      {/*<Image*/}
-      {/*  className="absolute inset-0 min-w-max h-full items-center  object-cover object-top mb-10"*/}
-      {/*  src={bg}*/}
-      {/*  width="400"*/}
-      {/*  height="500"*/}
-      {/*  alt="hero background image"*/}
-      {/*/>*/}
       <div className="container relative z-[1] m-auto px-6 md:px-12">
         <div className="m-auto text-center md:w-8/12 lg:w-6/12">
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">

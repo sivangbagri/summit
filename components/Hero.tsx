@@ -21,25 +21,6 @@ import Link from "next/link";
 const Home: React.FC = () => {
   return (
     <div>
-      {/*<Image*/}
-      {/*  className="absolute inset-0 w-full h-full object-cover object-top"*/}
-      {/*  src={meeting}*/}
-      {/*  width="400"*/}
-      {/*  height="500"*/}
-      {/*  alt="hero background image"*/}
-      {/*/>*/}
-      {/*<Image*/}
-      {/*  className="absolute w-full object-cover blur-3xl object-left-top h-screen inset-0 top-0 hidden dark:block"*/}
-      {/*  src={meeting}*/}
-      {/*  alt="image"*/}
-      {/*  loading="lazy"*/}
-      {/*/>*/}
-      {/*<Image*/}
-      {/*  className="absolute w-full object-cover object-top h-screen inset-0 top-0 dark:hidden"*/}
-      {/*  src={meeting}*/}
-      {/*  alt="image"*/}
-      {/*  loading="lazy"*/}
-      {/*/>*/}
       <div className="flex justify-center container m-auto px-6 md:px-12 lg:px-7">
         <div className="py-40 pb-0 lg:pb-0 px-20 flex-col justify-center items-center lg:py-56  dark:lg:w-6/12 ml-auto">
           <h1 className="text-gray-900 dark:text-white text-center font-bold text-4xl md:text-6xl lg:text-4xl xl:text-6xl">

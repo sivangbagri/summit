@@ -59,7 +59,7 @@ type CardProps = {
 const  Card:React.FC<CardProps>=( {id})=> {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
-  const y = useParallax(scrollYProgress, 100);
+  const y = useParallax(scrollYProgress, 150);
 
   return (
       <section className={`${ContentStyle.section} px-8 `}   >
