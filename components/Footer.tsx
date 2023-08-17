@@ -187,7 +187,7 @@ const Footer = () => {
               Overall Coordinator
             </h6>
             <div className={"flex flex-col items-start mt-5 space-y-2"}>
-              <ul className="mt-4 list-inside space-y-4">
+              <ul className="list-inside space-y-4">
                 {overcallCordinator.map((item, index) => {
                   return (
                     <div
@@ -225,7 +225,7 @@ const Footer = () => {
               For IIT BHU Alumni
             </h6>
             <div className={"flex flex-col items-start mt-5 space-y-2"}>
-              <ul className="mt-4 list-inside space-y-4">
+              <ul className="list-inside space-y-4">
                 {iitBhuAlumni.map((item, index) => {
                   return (
                     <div
@@ -263,7 +263,7 @@ const Footer = () => {
               For Sponsorship Opportunities
             </h6>
             <div className={"flex flex-col items-start mt-5 space-y-2"}>
-              <ul className="mt-4 list-inside space-y-4">
+              <ul className="list-inside space-y-4">
                 {speakingOpporunities.map((item, index) => {
                   return (
                     <div
@@ -301,7 +301,7 @@ const Footer = () => {
               For Speaking Opportunities
             </h6>
             <div className={"flex flex-col items-start mt-5 space-y-2"}>
-              <ul className="mt-4 list-inside space-y-4">
+              <ul className="list-inside space-y-4">
                 {speakingOpporunities.map((item, index) => {
                   return (
                     <div
