@@ -29,17 +29,16 @@ const stats = [
 const Hightlight: React.FC = () => {
   // font : playlist script
   return (
-    <div className="back mt-0 relative overflow-hidden">
-      <div className="py-16">
+    <div className="pt-24 py-16">
       <div className="xl:container px-6 text-gray-500 md:px-12 m-auto mb-6">
         <div className={"flex justify-center"}>
-          <h2 className="mt-4 text-2xl text-black font-bold md:text-4xl" style={{color:"white"}}>
+          <h2 className="mt-8 text-2xl text-black font-bold md:text-4xl">
             Summit Highlights
           </h2>
         </div>
       </div>
-      <div className="flex-1 space-y-4 p-8 px-28 pt-6">
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5 md:mt-30 mid-screen-margin">
+      <div className="flex-1 space-y-4 p-8 px-28 pt-14">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
           {stats.map((stat, index) => {
             return (
               <Card
@@ -83,7 +82,7 @@ const Hightlight: React.FC = () => {
             
           </p>
     </div>
-    </div>
+   
     
     
   );
